@@ -39,28 +39,26 @@
 
         function computerSelectRandomLetter();
             console.log(computerGuess)
-
+        }
         document.onkeyup = function(event){
             guessLeft--;
-        
+        }
 	        var userGuess = event.key.toLowerCase();
 	        guessSoFar.push(userGuess)
 	        updateScores()
-
+        
 	            if(userGuess === computerGuess){
 		        wins++;
 		        updateScores()
 		        resetScores()
                 computerSelectRandomLetter()
+                }
         
                 if (guessLeft === 0){
 	            loses++1
 	            updateScores()
 	            resetScores()
                 }
-            }
-        }
-    }
 }
 
 </body>
