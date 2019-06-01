@@ -24,14 +24,20 @@
         function computerSelectRandomLetter() {
             computerGuess = computerChoices[Math.floor(Math.ndom() * computerChoices.length)];
         }
+        
         function update scores() {
-	        document.querySelector("#Wins").innerHTML = wins; x4
-	        document.querySelector("#Losses").innerHTML = wins; x4
-	        document.querySelector("#Guess left").innerHTML = wins; x4
-	        document.querySelector("#Your Guesses So Far").innerHTML = wins; x4
-	    
+	        document.querySelector("#Wins").innerHTML = wins;
+	        document.querySelector("#Losses").innerHTML = losses;
+	        document.querySelector("#Guess left").innerHTML = guessLeft;
+	        document.querySelector("#Your Guesses So Far").innerHTML = guessSoFar;
+        }
 
-}
+        function resetScores(){
+	        guessLeft = 9;
+	        guessSoFar = [];
+        }
+
+
 }
 
 </body>
