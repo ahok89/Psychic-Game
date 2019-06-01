@@ -14,15 +14,24 @@
 
     <script type=text/javascript>
        
-        var wins/loses = 0;
+        var wins = 0;
+        var losses = 0;
         var guessLeft = 9;
         var guessSoFar = [];
         var computerChoices = ['a','b','c', 'd', 'e', 'f', 'g', 'h', 'i', 'j' 'k' 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
         var computerGuess = '';
 
         function computerSelectRandomLetter() {
-    computerGuess =
-	computerChoices[Math.floor(Math.ndom() * computerChoices.length)];
+            computerGuess = computerChoices[Math.floor(Math.ndom() * computerChoices.length)];
+        }
+        function update scores() {
+	        document.querySelector("#Wins").innerHTML = wins; x4
+	        document.querySelector("#Losses").innerHTML = wins; x4
+	        document.querySelector("#Guess left").innerHTML = wins; x4
+	        document.querySelector("#Your Guesses So Far").innerHTML = wins; x4
+	    
+
+}
 }
 
 </body>
