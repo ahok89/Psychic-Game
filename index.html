@@ -7,59 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <p> Wins: <span id="Wins"></span></p>
+
+    <h1>The Psychic Game </h1>
+
+    <p>Pick a letter..is it the letter that I'm thinking of?</p>
+    
+    <p> Wins: <span id="Wins">0</span></p>
+    
     <p> Losses: <span id="Losses"></span></p>
+    
     <p> Guesses Left: <span id="Guesses left"></span></p>
+    
     <p> Your Guesses So Far: <span id="Your Guesses So Far"></span></p>
 
-    <script type=text/javascript>
+    <script type=text/javascript> src="assets/javascript/game.js"
        
-        var wins = 0;
-        var losses = 0;
-        var guessLeft = 9;
-        var guessSoFar = [];
-        var computerChoices = ['a','b','c', 'd', 'e', 'f', 'g', 'h', 'i', 'j' 'k' 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-        var computerGuess = '';
-
-        function computerSelectRandomLetter() {
-            computerGuess = computerChoices[Math.floor(Math.ndom() * computerChoices.length)];
-        }
-        
-        function update scores() {
-	        document.querySelector("#Wins").innerHTML = wins;
-	        document.querySelector("#Losses").innerHTML = losses;
-	        document.querySelector("#Guess left").innerHTML = guessLeft;
-	        document.querySelector("#Your Guesses So Far").innerHTML = guessSoFar;
-        }
-
-        function resetScores(){
-	        guessLeft = 9;
-	        guessSoFar = [];
-        }
-
-        function computerSelectRandomLetter();
-            console.log(computerGuess)
-        }
-        document.onkeyup = function(event){
-            guessLeft--;
-        }
-	        var userGuess = event.key.toLowerCase();
-	        guessSoFar.push(userGuess)
-	        updateScores()
-        
-	            if(userGuess === computerGuess){
-		        wins++;
-		        updateScores()
-		        resetScores()
-                computerSelectRandomLetter()
-                }
-        
-                if (guessLeft === 0){
-	            loses++1
-	            updateScores()
-	            resetScores()
-                }
-}
-
+    
 </body>
 </html>
