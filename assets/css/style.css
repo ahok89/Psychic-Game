@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 18 px;
+    line-height: 34 px;
+    background: url("../images/crowded-crystal-ball-indoors-1083817 (1).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gameboard {
+    background-color: lightcyan;
+    width: 30%;
+    -webkit-box-shadow: -8px 10px 5px 0px rgba(161,159,161,1);
+    -moz-box-shadow: -8px 10px 5px 0px rgba(161,159,161,1);
+    box-shadow: -8px 10px 5px 0px rgba(161,159,161,1);
+    opacity: .8;
+    text-align: center;
+    border-radius: 5px;
+}
